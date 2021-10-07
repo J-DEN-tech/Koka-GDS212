@@ -2,14 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class End : MonoBehaviour
+public class EndScript : MonoBehaviour
 {
 
-    //The chest object must have a collider set to “isTrigger” in the inspector
+    //The chest object must have a collider set to ï¿½isTriggerï¿½ in the inspector
 
 
     //reference to the player script to check the player lockPickSkill.
-    //PlayerControllerThatLevelsUp must have a int variable called ”currentLockPickSkill”
+    //PlayerControllerThatLevelsUp must have a int variable called ï¿½currentLockPickSkillï¿½
 
     private PlayerControllerThatLevelsUp playerControllerThatLevelsUp;
 
@@ -21,22 +21,23 @@ public class End : MonoBehaviour
     //public Transform Cog;
 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other) 
     {
 
 
         if (other.gameObject.GetComponent<PlayerControllerThatLevelsUp>())
         {
             playerControllerThatLevelsUp = other.gameObject.GetComponent<PlayerControllerThatLevelsUp>();
-            //PlayerControllerThatLevelsUp must have a int variable called ”currentLockPickSkill”
+            //PlayerControllerThatLevelsUp must have a int variable called ï¿½currentLockPickSkillï¿½
             CheckIfLockPickIsSuccessful();
+            Debug.Log("XP Level check");
 
         }
 
     }
 
 
-    //PlayerControllerThatLevelsUp must have a int variable called ”currentLockPickSkill”
+    //PlayerControllerThatLevelsUp must have a int variable called ï¿½currentLockPickSkillï¿½
     private void CheckIfLockPickIsSuccessful()
     {
         DiceRollResult = Random.Range(0, 6);
@@ -45,6 +46,7 @@ public class End : MonoBehaviour
         {
             //Instantiate(Cog, transform.position, transform.rotation);
             Destroy(gameObject);
+            Debug.Log("You Win");
         }
         else if (playerControllerThatLevelsUp.currentLockPickSkill + 5 < ChestDifficulty)
         {

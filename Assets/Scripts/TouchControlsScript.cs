@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TouchControls : MonoBehaviour
+public class TouchControlsScript : MonoBehaviour
 {
     [SerializeField]
     private float distanceThresh;

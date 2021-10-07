@@ -596,6 +596,76 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &958119838
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958119841}
+  - component: {fileID: 958119840}
+  - component: {fileID: 958119839}
+  m_Layer: 0
+  m_Name: Death Pit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &958119839
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958119838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1327515ecd64ee41827185790d9adac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!61 &958119840
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958119838}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.17374516, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 15.401545, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &958119841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958119838}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.75, y: -3.82, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &972973836
 GameObject:
   m_ObjectHideFlags: 0
@@ -801,12 +871,12 @@ PrefabInstance:
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.1400001
+      value: 6.51
       objectReference: {fileID: 0}
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.96999997
+      value: 3.28
       objectReference: {fileID: 0}
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
@@ -941,14 +1011,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1367574554}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 757a0e382e4bc4d48b1a4914fab89bac, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f93e359858e10d42aa068bbf33eba9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   currentLockPickSkill: 0
   xp: 0
   xpForNextLevel: 10
   level: 0
-  moveSpeed: 3
+  moveSpeed: 2
 --- !u!1 &1442272626
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,7 +1129,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442272626}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d427b4ebd68f0da4aa8605e6fe46eb35, type: 3}
+  m_Script: {fileID: 11500000, guid: b8761e5e9d9087c4087f0d5c3665944c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   spinSpeed: 100
@@ -1306,8 +1376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fea4b74aa60a2b34dbf052ab19125ca9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  win: {fileID: 0}
-  lose: {fileID: 0}
+  win: {fileID: 5887446423303643412, guid: 12f125943f83a1e47a0ed1ec205ef258, type: 3}
+  lose: {fileID: 5737079279599091835, guid: a0071164201bc154b88e0afe3d8a930e, type: 3}
   activate: 0
   resetdelay: 1
   transition: {fileID: 0}
@@ -1356,12 +1426,12 @@ PrefabInstance:
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.31
+      value: 8.51
       objectReference: {fileID: 0}
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.97
+      value: 3.28
       objectReference: {fileID: 0}
     - target: {fileID: 7746406443177986728, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
@@ -1446,6 +1516,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7746406443177986731, guid: 35987001d35ae8546bb355c9c394cd06,
         type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7746406443177986731, guid: 35987001d35ae8546bb355c9c394cd06,
+        type: 3}
       propertyPath: m_SpriteTilingProperty.border.w
       value: 0
       objectReference: {fileID: 0}
@@ -1513,6 +1588,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.4132223, y: 1.2714396}
   m_EdgeRadius: 0
+--- !u!114 &2113197231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113197226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8034ceb8380e6d4894a9327cafb6e30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChestDifficulty: 0
 --- !u!1001 &3516984661732357408
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1726,4 +1814,5 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8446594059208412670, guid: 480bdf0890f5e3e4f81480f4bc7652c3, type: 3}
+    - {fileID: 3520156211769718453, guid: 480bdf0890f5e3e4f81480f4bc7652c3, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 480bdf0890f5e3e4f81480f4bc7652c3, type: 3}

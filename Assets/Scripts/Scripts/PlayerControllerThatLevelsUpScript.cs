@@ -11,7 +11,7 @@ using UnityEngine;
 		Left/right arrow keys to rotate left and right.
 */
 
-public class PlayerControllerThatLevelsUp : MonoBehaviour
+public class PlayerControllerThatLevelsUpScript : MonoBehaviour
 {
 
 
@@ -78,9 +78,9 @@ public class PlayerControllerThatLevelsUp : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("Trigeered");
+  //  private void OnTriggerEnter2D(Collider2D other) 
+ //   {
+     //   Debug.Log("Trigeered");
 
      //   if (other.gameObject.tag == "Player")
       //  {
@@ -89,5 +89,6 @@ public class PlayerControllerThatLevelsUp : MonoBehaviour
       //  }
 
 
-    }
+  //  }
+    
 }

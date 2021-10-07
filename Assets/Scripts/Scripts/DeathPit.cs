@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class DeathPit : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +14,14 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+          
+           Debug.Log("You Lose");
+        }
     }
 }

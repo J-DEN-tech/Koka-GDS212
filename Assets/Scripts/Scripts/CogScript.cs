@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Cog : MonoBehaviour
+public class CogScript : MonoBehaviour
 {
     public float spinSpeed = 100f;
     public int xpValue = 100;
@@ -20,7 +20,7 @@ public class Cog : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-           other.gameObject.GetComponent<PlayerControllerThatLevelsUp>().GainXP(xpValue);
+           other.gameObject.GetComponent<PlayerControllerThatLevelsUpScript>().GainXP(xpValue);
             Destroy(this.gameObject);
         }
 
